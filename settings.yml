@@ -1,4 +1,11 @@
-use_default_settings: true
+use_default_settings:
+  engines:
+    keep_only:
+      - google
+      - brave
+      - duckduckgo
+      - startpage
+      - bing
 
 general:
   instance_name: "Private SearXNG"
@@ -7,6 +14,19 @@ search:
   formats:
     - html
     - json
+
+engines:
+  - name: google
+    weight: 2.0
+  - name: brave
+    weight: 1.25
+  - name: duckduckgo
+    weight: 1.0
+  - name: startpage
+    weight: 1.0
+  - name: bing
+    disabled: false
+    weight: 0.9
 
 server:
   secret_key: "X7zL9qR2vB4mP6jN1wS8kC3fT5hG9aY0xV2uM4iE6oB8pZ1dQ3sK5nJ7rL9tW0"
